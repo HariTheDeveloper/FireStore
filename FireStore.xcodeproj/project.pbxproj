@@ -15,6 +15,13 @@
 		CA629A472692B552008C41F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA629A452692B552008C41F2 /* LaunchScreen.storyboard */; };
 		CA629A522692B552008C41F2 /* FireStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA629A512692B552008C41F2 /* FireStoreTests.swift */; };
 		CA629A5D2692B552008C41F2 /* FireStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA629A5C2692B552008C41F2 /* FireStoreUITests.swift */; };
+		CA629A732692B65A008C41F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA629A722692B65A008C41F2 /* LoginViewController.swift */; };
+		CA629A7B2692B66E008C41F2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA629A7A2692B66E008C41F2 /* SignupViewController.swift */; };
+		CA629A802692B680008C41F2 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA629A7F2692B680008C41F2 /* VerificationViewController.swift */; };
+		CA629A852692B68D008C41F2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA629A842692B68D008C41F2 /* DashboardViewController.swift */; };
+		CA629A8A2692B69B008C41F2 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA629A892692B69B008C41F2 /* CartViewController.swift */; };
+		CA629A8F2692B6A8008C41F2 /* OrdersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA629A8E2692B6A8008C41F2 /* OrdersListViewController.swift */; };
+		CA629A942692B6B4008C41F2 /* OrdersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA629A932692B6B4008C41F2 /* OrdersDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		CA629A582692B552008C41F2 /* FireStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA629A5C2692B552008C41F2 /* FireStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreUITests.swift; sourceTree = "<group>"; };
 		CA629A5E2692B552008C41F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA629A722692B65A008C41F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA629A7A2692B66E008C41F2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		CA629A7F2692B680008C41F2 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		CA629A842692B68D008C41F2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		CA629A892692B69B008C41F2 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		CA629A8E2692B6A8008C41F2 /* OrdersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListViewController.swift; sourceTree = "<group>"; };
+		CA629A932692B6B4008C41F2 /* OrdersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,11 @@
 		CA629A392692B550008C41F2 /* FireStore */ = {
 			isa = PBXGroup;
 			children = (
+				CA629A712692B643008C41F2 /* Orders */,
+				CA629A702692B63C008C41F2 /* Cart */,
+				CA629A6F2692B633008C41F2 /* Dashboard */,
+				CA629A6E2692B621008C41F2 /* Signup */,
+				CA629A6D2692B60E008C41F2 /* Login */,
 				CA629A3A2692B550008C41F2 /* AppDelegate.swift */,
 				CA629A3C2692B550008C41F2 /* SceneDelegate.swift */,
 				CA629A3E2692B550008C41F2 /* ViewController.swift */,
@@ -126,6 +145,48 @@
 				CA629A5E2692B552008C41F2 /* Info.plist */,
 			);
 			path = FireStoreUITests;
+			sourceTree = "<group>";
+		};
+		CA629A6D2692B60E008C41F2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CA629A722692B65A008C41F2 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CA629A6E2692B621008C41F2 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				CA629A7A2692B66E008C41F2 /* SignupViewController.swift */,
+				CA629A7F2692B680008C41F2 /* VerificationViewController.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		CA629A6F2692B633008C41F2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CA629A842692B68D008C41F2 /* DashboardViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		CA629A702692B63C008C41F2 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				CA629A892692B69B008C41F2 /* CartViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		CA629A712692B643008C41F2 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				CA629A8E2692B6A8008C41F2 /* OrdersListViewController.swift */,
+				CA629A932692B6B4008C41F2 /* OrdersDetailViewController.swift */,
+			);
+			path = Orders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +319,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA629A802692B680008C41F2 /* VerificationViewController.swift in Sources */,
+				CA629A852692B68D008C41F2 /* DashboardViewController.swift in Sources */,
+				CA629A732692B65A008C41F2 /* LoginViewController.swift in Sources */,
 				CA629A3F2692B550008C41F2 /* ViewController.swift in Sources */,
+				CA629A8A2692B69B008C41F2 /* CartViewController.swift in Sources */,
+				CA629A7B2692B66E008C41F2 /* SignupViewController.swift in Sources */,
 				CA629A3B2692B550008C41F2 /* AppDelegate.swift in Sources */,
+				CA629A8F2692B6A8008C41F2 /* OrdersListViewController.swift in Sources */,
+				CA629A942692B6B4008C41F2 /* OrdersDetailViewController.swift in Sources */,
 				CA629A3D2692B550008C41F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
